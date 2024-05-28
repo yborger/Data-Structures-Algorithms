@@ -1,0 +1,12 @@
+       7
+    5      8
+  4   6      9
+
+: x   y    z (8 and 9)
+
+: Left rotation is performed on 5
+: 7 replaces 5, and 4 (x) is shifted to the left of 5.
+: 6(y) is now on the right of 5.
+: 8 and 9 (together are z) remain on the right of 7.
+: Now, we have a balanced AVL Tree.
+: 

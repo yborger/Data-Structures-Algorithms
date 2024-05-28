@@ -1,0 +1,11 @@
+*.out
+*.a
+*.o
+*.swp
+/a.out
+/numberSummary
+
+#More editor temp files
+._*
+.vscode
+

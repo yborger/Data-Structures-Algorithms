@@ -1,0 +1,150 @@
+% This LaTeX file contains your written lab questions.  You may answer
+% these questions just by inserting your answer into this document.
+%
+% If you're unfamiliar with LaTeX, see the document LearningLaTeX.tex
+% in this same directory.  It contains a brief explanation and a few
+% snippets of LaTeX code to get you started; in fact, it should have
+% everything you need to complete this assignment.
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{algpseudocode}
+\usepackage{algorithmicx}
+\usepackage{alltt}
+\usepackage{enumerate}
+
+\newtheorem{claim}{Claim}
+
+\begin{document}
+    \section{Inductive Proofs}
+
+    Prove each of the following claims by induction
+
+    \begin{claim}
+      The sum of the first $n$ even numbers is $n^2+n$.  That is, $\sum\limits_{i=1}^n 2i = n^2 + n$
+    \end{claim}
+
+      \textbf{Base Case:} n = 1 \\ \\
+      LHS: 2i = 2 \\
+      LHS: \[ \sum_{i=1}^{1} 2i = 2 \]
+      RHS: $1^2 + 2$ \\
+
+    $2 = 1^2 + 1$  \\
+    \indent 2=2 \\ \\
+
+      LHS = RHS  \\
+
+      \textbf{Inductive Hypothesis:} Assume that for all $1 \leq n \leq k$ \\
+      \[ \sum_{i=1}^{n} 2i \]
+
+
+     \textbf{Inductive Step:}
+      We want to show that
+
+      \[ \sum_{i=1}^{k+1} 2i = \sum_{i=1}^{k} 2i + 2*(k+1) \]
+
+      $k^2 + k + 2(k+1)$
+      = $k^2 + 3k + 2$ \\
+
+    Therefore, by proof of induction, statement holds true.\\
+      % Write your proof of the above statement here.
+
+
+    \begin{claim}
+      $\sum\limits_{i=1}^{n} \dfrac{1}{2^i} = 1 - \dfrac{1}{2^n}$
+    \end{claim}
+
+      \textbf{Base Case:}  n = 1
+
+      LHS: \[ \sum_{i=1}^{1} \dfrac{1}{2^i} = \dfrac{1}{2} \]
+
+      RHS: $1-\dfrac{1}{2^i}$ = $\dfrac{1}{2}$\\
+
+      LHS = RHS \\
+
+      \textbf{Inductive Hypothesis:} Assume that for all $1 \leq n \leq k$
+      \[ \sum_{i=1}^{n} \dfrac{1}{2^i} \]
+
+
+      \textbf{Inductive Step:}
+      We want to show that
+
+      \[ \sum_{i=1}^{k+1} \dfrac{1}{2^i} = \sum_{i=1}^{k} \dfrac{1}{2^i}  + \dfrac{1}{2^{k+1}} \]
+      = $1- (\dfrac{1}{2^k} + \dfrac{1}{2^{k+1}})$ \\
+      = $1- (\dfrac{1}{2^k} + \dfrac{1}{2^k*2})$  \\
+      = $1-(\dfrac{2}{2^k}  + \dfrac{1}{2^k*2})$ \\
+      = $1-(\dfrac{1}{2^{k+1}})$ \\
+
+      Therefore, by proof of induction, statement holds true.\\
+      % Write your proof of the above statement here.
+
+
+    \begin{claim}
+      $\sum\limits_{i=0}^{n} 2^i = 2^{n+1}-1$
+    \end{claim}
+
+      \textbf{Base Case:} n = 0\\ \\
+      \indent  LHS: \[ \sum_{i=1}^{0} 2^0 = 1 \]
+
+      \indent RHS: $2^1 - 1  = 1$\\
+
+      \indent 1 = 1\\ \\
+      \indent LHS = RHS \\
+
+      \textbf{Inductive Hypothesis:} Assume that for all $1 \leq n \leq k$ \\
+      \[ \sum_{i=1}^{n} 2^i \]
+
+      \textbf{Inductive Step:} \\
+       \[ \sum_{i=1}^{n} 2^i = \sum_{i=1}^{k} 2^i + 2^{k+1} -1 \]
+      \indent = $(2^{k+1} -1) + 2^{k+1}$\\
+      \indent  = $2^{k+2} -1$ \\
+
+      Therefore, by proof of induction, statement holds true.
+      % Write your proof of the above statement here.
+
+    \vspace{1cm}
+    \section{Recursive Invariants}
+
+    The function \texttt{minEven}, given below in pseudocode, takes as
+    input an array $A$ of size $n$ of numbers.  It returns the
+    smallest \textit{even} number in the array.  If no even numbers
+    appear in the array, it returns positive infinity ($+\infty$).
+    Using induction, prove that the \texttt{minEven} function works
+    correctly.  Clearly state your recursive invariant at the
+    beginning of your proof.
+
+    \begin{alltt}
+Function minEven(A,n)
+  If n = 0 Then
+    Return +\ensuremath{\infty}
+  Else
+    Set best To minEven(A,n-1)
+    If A[n-1] < best And A[n-1] is even Then
+      Set best To A[n-1]
+    EndIf
+    Return best
+  EndIf
+EndFunction
+    \end{alltt}
+
+    \textbf{Proof by Induction}\\
+
+    \textbf{Base Case:} If there  are P(n)=0 - empty array- or no  even  numbers exist \indent in the array,  then positive infinity  is returned. \\
+
+    \textbf{Inductive Hypothesis:}
+    Assume that A[n] for all 0 $\leq$ n $\leq$ k, \\
+
+    \textbf{Inductive Step:} We want to show that for k+1, \\ \\
+    \indent = (A,[n+1-1]) \\
+    \indent = A[n] \\
+
+    Therefore, by proof of induction, the function minEven holds true.
+
+
+
+
+    % Give your recursive invariant and your proof here.
+
+\end{document}

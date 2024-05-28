@@ -1,0 +1,32 @@
+# TODO: show the list interpreted as a complete binary tree
+
+        5
+    4       2
+  3   2   8   5
+
+: Starting from the root, we check that the children are less than the parents.
+: 5 is greater than its children.
+: Going from left to right after the root, we check this again.
+: 4 is greater than its children.
+: Now we check the right child of 5, which is 2.
+: 2 is not greater than its children.
+
+# TODO: show each bubble-down operation as the tree is heapified
+
+
+        5
+    4       8
+  3   2   2   5
+
+: Since 2 is not greater than its children, the greatest child of 2, which is 8,
+: bubbles up to replace it. The new subtree has a root(8) greater than its children (2,5).
+: We go back to the root to verify once more after the swap occurs.
+: We check if the root is greater than its children, which is false (5 < 8).
+
+        8
+    4       5
+  3   2   2   5
+
+: Since 8 is the only greater child of 5, 8 bubbles up to replace 5 as the root.
+: We then go back and check the whole tree once more.
+: The tree is now a heap!

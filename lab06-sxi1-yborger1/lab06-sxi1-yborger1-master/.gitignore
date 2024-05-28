@@ -1,0 +1,40 @@
+# C++ things
+/maze
+/testStackQueue
+/testMaze
+/manualTests
+
+#See templates at https://github.com/github/gitignore
+
+#C/C++ library and object files
+*.o
+*.a
+*.so
+a.out
+
+# MAC, vim, emacs goofiness
+.DS_STORE
+.DS_STORE?
+*~
+*#
+.#*
+.nfs*
+.*.sw?
+*.bak
+
+# TeX/LaTeX
+*.aux
+*.log
+*.bbl
+*.out
+*.synctex
+*.synctex.gz
+*.yaml
+!.create-group-repos.yaml
+*.fls
+*.fdb_latexmk
+
+#More editor temp files
+._*
+.vscode
+

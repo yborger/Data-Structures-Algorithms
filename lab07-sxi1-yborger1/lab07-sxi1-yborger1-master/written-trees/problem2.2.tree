@@ -1,0 +1,37 @@
+        9
+    4       8
+  4   3   7   2
+ 3 1 2 2 6 4 1
+
+: First, remove 9. This is our original heap.
+
+        1
+    4       8
+  4   3   7   2
+ 3 1 2 2 6 4
+
+: Upon removing 9, we replace it with the right-most, bottom-most value, which is 1.
+: 1 is not greater than its children, therefore we must bubble down.
+        8
+    4       1
+  4   3   7   2
+ 3 1 2 2 6 4
+
+: 8 is the largest child of 1, therefore 8 bubbles up and 1 bubbles down.
+: However, 1 still has children greater than it, therefore we must continue bubbling down.
+        8
+    4       7
+  4   3   1   2
+ 3 1 2 2 6 4
+
+: 7 is the largest child of 1, therefore 7 bubbles up and 1 bubbles down.
+: But, 1 still has children greater than it, therefore we must continue bubbling down.
+
+        8
+    4       7
+  4   3   6   2
+ 3 1 2 2 1 4
+
+: 6 is the largest child of 1, therefore 6 bubbles up and 1 bubbles down.
+: Now, we have a heap!
+:

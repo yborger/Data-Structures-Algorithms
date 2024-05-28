@@ -1,0 +1,36 @@
+#It is probably best to add the names of executables here too
+#beginners *love* to add executables to a git repo
+/quickSort
+/a.out
+/tests
+/LearningLaTex.pdf
+
+#See templates at https://github.com/github/gitignore
+
+#C/C++ library and object files
+*.o
+*.a
+*.so
+a.out
+
+# MAC, vim, emacs goofiness
+.DS_STORE
+.DS_STORE?
+*~
+*#
+.#*
+.nfs*
+.*.sw?
+*.bak
+
+# pdflatex outputs
+*.aux
+*.log
+*.out
+*.synctex
+*.synctex.gz
+
+#More editor temp files
+._*
+.vscode
+

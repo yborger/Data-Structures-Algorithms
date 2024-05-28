@@ -1,0 +1,39 @@
+Answer the following questions by modifying this text file.  Write
+your answers between each question.  You're not being graded or judged
+on these answers.
+
+1. What is your name?  What do you prefer to be called?
+My name is Yael, and I go by Yael. I use she/they pronouns.
+
+
+2. Why are you taking CS35?
+I am taking CS35 because I enjoy computer science and algorithms
+are actually one of my favorite parts of programming.
+
+
+3. What is your previous experience in Computer Science?  What
+programming languages do you know, and which classes have you taken?
+I have taken CS31 at Swarthmore, but not CS21 as I tested out of it. 
+I also took AP Computer Science Principles and AP Computer Science A
+in high school. I learned C, JAVA, and Javascript.
+
+
+4. These are a couple questions about how you approach your assignments.
+
+  a. Do you start on your homework as soon as it is assigned or do you
+  tend to finish it right before it's due?
+  I tend to be right in the middle, where I don't do my homework immediately
+  when it is given, but I try to do it a safe amount of time before the 
+  due date (like a few days if possible).
+  
+  
+  b. When doing group work, do you prefer for your group to split your
+  work up into pieces or do you like to work together as a group
+  through as much of the material as possible?
+  I like working as a group through the whole thing so that everyone is on the 
+  same page as we do the work.
+
+
+5. What do you consider fun?
+  I think typing itself is quite fun, especially when you actually know what 
+  you are typing to begin with and it all just flows through as you go.

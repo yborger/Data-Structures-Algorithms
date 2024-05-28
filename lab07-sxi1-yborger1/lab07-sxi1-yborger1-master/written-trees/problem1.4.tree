@@ -1,0 +1,18 @@
+: Before
+            40
+     24               50
+  12    36       46       80
+11            42        79  81
+                43
+
+: After
+                40
+         24               50
+      12    36       43       80
+    11            42    46  79  81
+
+: 50 bubbles up to replace 54 as the predecessor.
+: However, now 46 has one child, it has a height of 2 (42 and 43), and a height of 0 from the right side (no children).
+: Therefore, we must balance it by performing a left rotation on 42.
+: Then, we perform a right rotation on 43, so that 43 becomes the root of the subtree on the left of 50.
+: 

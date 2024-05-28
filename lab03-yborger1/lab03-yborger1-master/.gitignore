@@ -1,0 +1,29 @@
+#It is probably best to add the names of executables here too
+#beginners *love* to add executables to a git repo
+
+artwork
+manualTests
+tests
+a.out
+
+.shapeConstants.h
+shapeConstants.h
+
+#C/C++ library and object files
+*.o
+*.a
+*.so
+
+# MAC, vim, emacs goofiness
+.DS_STORE
+.DS_STORE?
+*~
+*#
+.#*
+.nfs*
+.*.sw?
+
+#More editor temp files
+._*
+.vscode
+

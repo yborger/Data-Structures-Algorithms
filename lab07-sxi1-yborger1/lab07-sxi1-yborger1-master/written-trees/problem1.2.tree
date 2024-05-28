@@ -1,0 +1,14 @@
+           19
+    12              22
+  8    13       21      27
+6        17           24  30
+
+: Right rotation at 27.
+: 22 replaces 27, in which 21(x) remains on the left of 22.
+: 24 (y) was on the right of 22, but after the right rotation,
+: it can not remain directly right as 27 is at that position.
+: Therefore, 24 must follow its relationship with 22 (it is greater than 22).
+: However, since 27 is the right child of 22 (because of the right rotation), 24 must readjust to the left of 27.
+: 30 is our z.
+: Now, we have a balanced AVL Tree.
+:
